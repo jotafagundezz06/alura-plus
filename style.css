@@ -7,10 +7,14 @@
     --cinza-secundario: #c0c0c0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030c;
+    --fonte-principal: 'inter';
 }
 body{
     background-color: var(--cor-de-fundo);
     color: var(--branco-proncipal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 .principal{
     background-image: url("img/Background.png");
@@ -19,5 +23,29 @@ body{
 }
 .container{
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+.titulo{
+    font-size: 28px;
+    height: 700;
+}
+.container-botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-proncipal);
+    display: block;
+    text-decoration: none;
+}
+.container-botao-dois{
+    background-color: transparent;
+    border: 2px solid var(--branco-proncipal);
+
+}
+.container-aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
 
 }
